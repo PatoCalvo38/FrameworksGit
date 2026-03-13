@@ -4,6 +4,7 @@ import { CreateTodoDto } from "../dto/create-todo.dto";
 
 @Injectable()
 export class CreateTodoRepository {
+    
     constructor(private readonly prisma: PrismaService) {}
 
     async execute(data: CreateTodoDto) {

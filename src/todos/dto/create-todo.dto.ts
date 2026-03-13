@@ -23,7 +23,7 @@ export class CreateTodoDto {
 
     @IsDateString()
     @IsOptional()
-    dueAt: Date;
+    dueAt?: Date;
 
     @IsDateString()
     completedAt: Date;
@@ -36,7 +36,7 @@ export class CreateTodoDto {
 
     @IsDateString()
     @IsOptional()
-    updatedAt: Date;
+    updatedAt?: Date;
 }
 
 
